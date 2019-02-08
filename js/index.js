@@ -20,5 +20,9 @@ document.querySelector('.clear')
         display.value = '';
 
     });
+    document.querySelector('.backspace')
+    .addEventListener('click', function() {
+        display.value = display.value.substring(0, display.value.length - 1)
+    });
 
 
